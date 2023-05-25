@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'IRANSansX-Light';
+  src: url(./fonts/IRANSansX-Light.woff) format('woff'); 
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'IRANSansX-Light';
+  text-transform: capitalize;
+  outline: none;
+  list-style: none;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  position: relative;
+  width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.img-holder img{
+  width: 70px;
+}
+
+.img-holder button{
+  border: none;
+  background: transparent;
+  display: none;
+  cursor: pointer;
+}
+
+.list-container{
+  transition: all .3s ease;
+}
+
+.list{
+  display: flex;
+}
+
+.list li{
+  padding: 0 13px;
+}
+
+.icons span{
+  padding: 0 10px;
+}
+
+@media screen and (max-width: 700px){
+
+  .img-holder{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .img-holder button{
+    display: block;
+  }
+  .list-container{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 65px;
+    height: 0;
+    background: rgb(199, 199, 199);
+    border-top: 1px solid rgb(245, 245, 245);
+    overflow: hidden;
+  }
+
+  .list{
+    display: block;
+  }
+
+  .list li{
+    padding: 10px 13px;
+  }
+
+  .icons{
+    display: none;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
