@@ -8,6 +8,7 @@ import {facebook} from 'react-icons-kit/fa/facebook';
 import {google} from 'react-icons-kit/fa/google';
 import {reddit} from 'react-icons-kit/fa/reddit';
 import {ic_menu} from 'react-icons-kit/md/ic_menu';
+import {times} from 'react-icons-kit/fa/times'
 
 
 // logo
@@ -43,7 +44,14 @@ const Navbar = () => {
             <div className='container'>
                 <div className='img-holder'>
                     <button onClick={()=> setShowLink(!showLink)}>
-                        <Icon icon={ic_menu} size={20}/>    
+                        {
+                            showLink ?
+                            <Icon icon={times} size={20}/>    
+                            
+                            :
+                            <Icon icon={ic_menu} size={20}/>    
+
+                        }
                     </button>
 
                     <img src={logo} alt='logo'/>
